@@ -5,10 +5,10 @@ DROP procedure IF EXISTS `postHealth`;
 
 DELIMITER $$
 USE `health_db`$$
-CREATE PROCEDURE `postHealth`(IN `name` VARCHAR(255))
+CREATE PROCEDURE `postHealth`(IN `input_name` VARCHAR(255))
 BEGIN
 
-INSERT INTO `health_table` (`name`, `time`) VALUES (`name`, now());
+INSERT INTO `health_table` (`name`, `time`) VALUES (`input_name`, now());
 
 END$$
 
