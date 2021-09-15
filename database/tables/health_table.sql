@@ -13,7 +13,7 @@ BEGIN
 
 CREATE TABLE `health_table` (
   `log_id` INT NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
   `time` DATETIME,
   PRIMARY KEY (`log_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

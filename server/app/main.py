@@ -31,10 +31,10 @@ def welcome():
 
 
 @app.post('/logHealth')
-def log_health(body: dict={ "Name": "Elon Musk", "ID": 29 }):
+def log_health(name: str="Elon Musk"):
     try:
         conn, cursor = init_conn()
-        res = post_health(conn, cursor, body["Name"], body["ID"])
+        res = post_health(conn, cursor, name)
         return res, 200
 
     except Exception as e:

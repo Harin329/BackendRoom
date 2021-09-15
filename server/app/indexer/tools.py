@@ -12,13 +12,12 @@ def connect_mysql():
         logging.error(e)
 
 
-def post_health(conn, cursor, name, ID):
+def post_health(conn, cursor, name):
     sql = 'postHealth'
     try:
-        res = cursor.callproc(sql, (name, ID))
-        print(res)
-        return res
+        cursor.callproc(sql, (name,))
+        conn.commit()
+        return name
     except Exception as e:
         print("MYSQL ERROR:", sql)
-        logging.info(conn)
         logging.error(e)
