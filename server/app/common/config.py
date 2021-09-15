@@ -1,6 +1,6 @@
 import os
 
-MYSQL_HOST = os.getenv("MYSQL_HOST", "db")
+MYSQL_HOST = os.getenv("MYSQL_HOST", "35.203.141.84")
 MYSQL_PORT = os.getenv("MYSQL_PORT", 3306)
 MYSQL_USER = os.getenv("MYSQL_USER", "root")
 MYSQL_PWD = os.getenv("MYSQL_PWD", "root")
