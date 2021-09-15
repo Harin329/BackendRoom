@@ -21,3 +21,12 @@ def post_health(conn, cursor, name):
     except Exception as e:
         print("MYSQL ERROR:", sql)
         logging.error(e)
+
+def get_health(conn, cursor):
+    sql = 'getHealth'
+    try:
+        cursor.callproc(sql)
+        return cursor.fetchall()
+    except Exception as e:
+        print("MYSQL ERROR:", sql)
+        logging.error(e)

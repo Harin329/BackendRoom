@@ -3,7 +3,12 @@
 ## Prerequisites
 - python
 - pip
-- mysql (mysql-client) + post installation steps
+- docker
+    - [Post Installation](https://docs.docker.com/engine/install/linux-postinstall/)
+- docker-compose
+- mysql or mysql-client
+    - [Pre Installation](https://pypi.org/project/mysqlclient/)
+- connect external IP to a DNS for let's encrypt
 
 ## Usage
 1. Git clone latest from repo
