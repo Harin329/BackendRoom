@@ -1,5 +1,7 @@
 # BackendRoom
 
+Welcome to the BackendRoom. This is a boilerplate setup for MySQL, Python FastAPI and Nginx. It supports HTTPS and uses docker-compose to get your backend up and going in seconds. Built for usage on cloud providers, but can be easily adapted with some extra configuration steps for a on premise machine.
+
 ## Prerequisites
 - python
 - pip
