@@ -15,7 +15,7 @@ def connect_mysql():
 def post_health(conn, cursor, name):
     sql = 'postHealth'
     try:
-        cursor.callproc(sql, (name))
+        cursor.callproc(sql, (name,))
         return cursor.info()
     except Exception as e:
         print("MYSQL ERROR:", sql)
